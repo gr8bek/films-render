@@ -1,0 +1,160 @@
+html body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: black;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  scroll-behavior: smooth;
+}
+
+.container {
+  max-width: 1360px;
+  width: 100%;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.films__inner {
+  padding: 70px 0;
+}
+
+.films__form {
+  margin-bottom: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.form__heading {
+  display: block;
+}
+
+.form__input {
+  border: none;
+  padding: 15px 0;
+  padding-left: 15px;
+  border-radius: 40px;
+  max-width: 300px;
+  width: 100%;
+  background-color: rgb(255, 253, 106);
+  color: black;
+}
+
+.form__input {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.form__textarea {
+  resize: horizontal;
+  border: none;
+  padding: 15px 0;
+  padding-left: 15px;
+  border-radius: 15px;
+  max-width: 300px;
+  width: 100%;
+  background-color: rgb(255, 253, 106);
+  color: black;
+}
+
+.form__submit {
+  border: none;
+  background-color: rgb(255, 253, 106);
+  border-radius: 20px;
+  padding: 15px 0;
+  color: black;
+
+  max-width: 300px;
+  width: 100%;
+}
+
+.films__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  column-gap: 30px;
+}
+
+.films__item {
+  display: flex;
+  flex-direction: column;
+  padding: 15px 0;
+  max-width: 350px;
+  align-items: center;
+  box-shadow: rgba(255, 255, 255, 1) 0px 8px 24px;
+  margin-bottom: 40px;
+  border-radius: 10px;
+  background-color: rgb(255, 253, 106);
+}
+
+.films__title {
+  margin-bottom: 5px;
+}
+
+.films__img {
+  max-width: 350px;
+  width: 100%;
+  margin-bottom: 15px;
+  vertical-align: middle;
+  object-fit: cover;
+}
+
+.films__overview {
+  display: flex;
+  margin: 0 10px;
+  margin-bottom: 15px;
+  align-self: center;
+}
+
+.films__overview::before {
+  display: block;
+  content: "Overview:";
+  line-height: 1.4;
+  margin-right: 10px;
+}
+
+.films__date {
+  align-self: center;
+  margin: 0 10px;
+}
+
+.films__date::before {
+  display: inline-block;
+  content: "Release date:";
+
+  margin-right: 10px;
+}
+
+.genres__list {
+  align-self: center;
+  margin: 0 10px;
+}
+
+.genres__list::before {
+  display: inline-block;
+  content: "Genres:";
+  margin-right: 10px;
+}
+
+.genres__item + .genres__item {
+  margin-left: 20px;
+}
